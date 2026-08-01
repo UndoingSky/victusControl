@@ -25,10 +25,9 @@ Omen Gaming Hub provides access to your laptop's thermal and performance setting
 
 ### Installation
 
-1. Clone this repository
-2. Open `VictusControl.sln` in Visual Studio 2022 or later
-3. Build the solution
-4. Run `VictusControl.App` with administrator privileges
+1. Download the installer from the latest release: [Victus Control v0.0.1](https://github.com/UndoingSky/victus_control/releases/tag/v0.0.1)
+2. Run `VictusControl.Setup.exe` as Administrator
+3. Launch Victus Control from the desktop shortcut or Start Menu entry
 
 Or from the command line:
 
@@ -38,15 +37,13 @@ cd src\VictusControl.App\bin\Debug\net8.0-windows
 .\VictusControl.App.exe
 ```
 
-### Release setup file
+### Release download
 
-To create the uploadable single-file release artifact, run:
+The published installer is here:
 
-```powershell
-.\build-release.ps1
-```
+`https://github.com/UndoingSky/victus_control/releases/tag/v0.0.1`
 
-The output is written to `publish\setup\VictusControl.Setup.exe`. This is a self-contained one-file Windows release bundle, so it can be uploaded directly to the release page without the loose dependency files from the normal publish folder.
+The installer creates `C:\Program Files\Victus Control`, installs the app there, and creates desktop plus Start Menu shortcuts. Windows does not allow silent pinning to Start, so the installer creates the Start Menu entry and you can pin it from there.
 
 ### First run
 

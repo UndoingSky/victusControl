@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VictusControl.App", "src\Vi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VictusControl.Diag", "src\VictusControl.Diag\VictusControl.Diag.csproj", "{442C2B66-EB70-4213-B6C8-0DEA9D39C538}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VictusControl.Setup", "src\VictusControl.Setup\VictusControl.Setup.csproj", "{A8B9D6C7-7D9E-4B1D-8C5A-1D27E85D2A13}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,10 +34,15 @@ Global
 		{442C2B66-EB70-4213-B6C8-0DEA9D39C538}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{442C2B66-EB70-4213-B6C8-0DEA9D39C538}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{442C2B66-EB70-4213-B6C8-0DEA9D39C538}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8B9D6C7-7D9E-4B1D-8C5A-1D27E85D2A13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8B9D6C7-7D9E-4B1D-8C5A-1D27E85D2A13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8B9D6C7-7D9E-4B1D-8C5A-1D27E85D2A13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8B9D6C7-7D9E-4B1D-8C5A-1D27E85D2A13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E7D0D829-F623-4BF3-A804-FB5D32706B50} = {D8CD0E2C-46D8-4468-A3EC-FFCE826943F1}
 		{D2643426-BCF2-40D9-91A4-987E3E27B56E} = {D8CD0E2C-46D8-4468-A3EC-FFCE826943F1}
 		{442C2B66-EB70-4213-B6C8-0DEA9D39C538} = {D8CD0E2C-46D8-4468-A3EC-FFCE826943F1}
+		{A8B9D6C7-7D9E-4B1D-8C5A-1D27E85D2A13} = {D8CD0E2C-46D8-4468-A3EC-FFCE826943F1}
 	EndGlobalSection
 EndGlobal

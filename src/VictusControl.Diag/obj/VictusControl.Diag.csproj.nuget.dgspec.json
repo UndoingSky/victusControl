@@ -4,14 +4,14 @@
     "C:\\Users\\lavig\\Desktop\\pc_control\\src\\VictusControl.Diag\\VictusControl.Diag.csproj": {}
   },
   "projects": {
-    "c:\\Users\\lavig\\Desktop\\pc_control\\src\\VictusControl.Core\\VictusControl.Core.csproj": {
+    "C:\\Users\\lavig\\Desktop\\pc_control\\src\\VictusControl.Core\\VictusControl.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\lavig\\Desktop\\pc_control\\src\\VictusControl.Core\\VictusControl.Core.csproj",
+        "projectUniqueName": "C:\\Users\\lavig\\Desktop\\pc_control\\src\\VictusControl.Core\\VictusControl.Core.csproj",
         "projectName": "VictusControl.Core",
-        "projectPath": "c:\\Users\\lavig\\Desktop\\pc_control\\src\\VictusControl.Core\\VictusControl.Core.csproj",
+        "projectPath": "C:\\Users\\lavig\\Desktop\\pc_control\\src\\VictusControl.Core\\VictusControl.Core.csproj",
         "packagesPath": "C:\\Users\\lavig\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\lavig\\Desktop\\pc_control\\src\\VictusControl.Core\\obj\\",
+        "outputPath": "C:\\Users\\lavig\\Desktop\\pc_control\\src\\VictusControl.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lavig\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -98,8 +98,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "c:\\Users\\lavig\\Desktop\\pc_control\\src\\VictusControl.Core\\VictusControl.Core.csproj": {
-                "projectPath": "c:\\Users\\lavig\\Desktop\\pc_control\\src\\VictusControl.Core\\VictusControl.Core.csproj"
+              "C:\\Users\\lavig\\Desktop\\pc_control\\src\\VictusControl.Core\\VictusControl.Core.csproj": {
+                "projectPath": "C:\\Users\\lavig\\Desktop\\pc_control\\src\\VictusControl.Core\\VictusControl.Core.csproj"
               }
             }
           }

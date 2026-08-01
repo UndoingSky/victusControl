@@ -5,19 +5,41 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-$project = Join-Path $PSScriptRoot "src\VictusControl.App\VictusControl.App.csproj"
-$publishDir = Join-Path $PSScriptRoot "publish\setup"
+$appProject = Join-Path $PSScriptRoot "src\VictusControl.App\VictusControl.App.csproj"
+$setupProject = Join-Path $PSScriptRoot "src\VictusControl.Setup\VictusControl.Setup.csproj"
+$appPublishDir = Join-Path $PSScriptRoot "publish\app"
+$setupPublishDir = Join-Path $PSScriptRoot "publish\setup"
+$payloadZip = Join-Path $PSScriptRoot "src\VictusControl.Setup\obj\VictusControl.App.zip"
 
-if (Test-Path $publishDir) {
-    Remove-Item $publishDir -Recurse -Force
+foreach ($path in @($appPublishDir, $setupPublishDir, $payloadZip)) {
+    if (Test-Path $path) {
+        Remove-Item $path -Recurse -Force
+    }
 }
 
-dotnet publish $project `
+dotnet publish $appProject `
     -c $Configuration `
     -r $RuntimeIdentifier `
-    -p:PublishProfile=ReleaseSetup
+    -o $appPublishDir
 
-Get-ChildItem $publishDir -Filter *.pdb -ErrorAction SilentlyContinue | Remove-Item -Force
+Compress-Archive -Path (Join-Path $appPublishDir '*') -DestinationPath $payloadZip -Force
 
-$setupExe = Join-Path $publishDir "VictusControl.Setup.exe"
+dotnet publish $setupProject `
+    -c $Configuration `
+    -r $RuntimeIdentifier `
+    -p:InstallerPayloadZip=$payloadZip `
+    -o $setupPublishDir
+
+Get-ChildItem $setupPublishDir -Filter *.pdb -ErrorAction SilentlyContinue | Remove-Item -Force
+Get-ChildItem $appPublishDir -Filter *.pdb -ErrorAction SilentlyContinue | Remove-Item -Force
+
+if (Test-Path $appPublishDir) {
+    Remove-Item $appPublishDir -Recurse -Force
+}
+
+if (Test-Path $payloadZip) {
+    Remove-Item $payloadZip -Force
+}
+
+$setupExe = Join-Path $setupPublishDir "VictusControl.Setup.exe"
 Write-Host "Setup artifact: $setupExe"

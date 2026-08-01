@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "6t8HpXzW+7k=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lavig\\Desktop\\pc_control\\src\\VictusControl.Setup\\VictusControl.Setup.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lavig\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.29\\microsoft.net.illink.tasks.8.0.29.nupkg.sha512",
+    "C:\\Users\\lavig\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.29\\microsoft.netcore.app.runtime.win-x64.8.0.29.nupkg.sha512",
+    "C:\\Users\\lavig\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.29\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.29.nupkg.sha512",
+    "C:\\Users\\lavig\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.29\\microsoft.aspnetcore.app.runtime.win-x64.8.0.29.nupkg.sha512"
+  ],
+  "logs": []
+}
