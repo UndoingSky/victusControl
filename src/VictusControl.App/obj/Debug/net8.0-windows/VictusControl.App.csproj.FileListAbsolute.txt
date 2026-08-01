@@ -39,3 +39,4 @@ C:\Users\lavig\Desktop\pc_control\src\VictusControl.App\obj\Debug\net8.0-windows
 C:\Users\lavig\Desktop\pc_control\src\VictusControl.App\obj\Debug\net8.0-windows\Theme\Controls.baml
 C:\Users\lavig\Desktop\pc_control\src\VictusControl.App\obj\Debug\net8.0-windows\Theme\Dark.baml
 C:\Users\lavig\Desktop\pc_control\src\VictusControl.App\obj\Debug\net8.0-windows\Theme\Light.baml
+c:\Users\lavig\Desktop\pc_control\src\VictusControl.App\obj\Debug\net8.0-windows\VictusControl.App.sourcelink.json

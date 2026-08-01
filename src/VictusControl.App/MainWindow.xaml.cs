@@ -568,7 +568,7 @@ public partial class MainWindow : Window {
     private void OnMaximize(object sender, RoutedEventArgs e) =>
         WindowState = WindowState == WindowState.Maximized ? WindowState.Normal : WindowState.Maximized;
 
-    private void RestoreFromTray() {
+    public void RestoreFromTray() {
         Show();
         _windowVisible = true;
         WindowState = WindowState.Normal;

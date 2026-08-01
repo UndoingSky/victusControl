@@ -38,6 +38,16 @@ cd src\VictusControl.App\bin\Debug\net8.0-windows
 .\VictusControl.App.exe
 ```
 
+### Release setup file
+
+To create the uploadable single-file release artifact, run:
+
+```powershell
+.\build-release.ps1
+```
+
+The output is written to `publish\setup\VictusControl.Setup.exe`. This is a self-contained one-file Windows release bundle, so it can be uploaded directly to the release page without the loose dependency files from the normal publish folder.
+
 ### First run
 
 When you first launch Victus Control, it will attempt to connect to your laptop's BIOS interface via WMI. If the connection fails, you will see a message. Administrator elevation is permanent requirement because the HP BIOS WMI interface will not respond to unelevated callers.

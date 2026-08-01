@@ -36,3 +36,4 @@ C:\Users\lavig\Desktop\pc_control\src\VictusControl.Diag\obj\Debug\net8.0-window
 C:\Users\lavig\Desktop\pc_control\src\VictusControl.Diag\obj\Debug\net8.0-windows\VictusControl.Diag.pdb
 C:\Users\lavig\Desktop\pc_control\src\VictusControl.Diag\obj\Debug\net8.0-windows\VictusControl.Diag.genruntimeconfig.cache
 C:\Users\lavig\Desktop\pc_control\src\VictusControl.Diag\obj\Debug\net8.0-windows\ref\VictusControl.Diag.dll
+c:\Users\lavig\Desktop\pc_control\src\VictusControl.Diag\obj\Debug\net8.0-windows\VictusControl.Diag.sourcelink.json

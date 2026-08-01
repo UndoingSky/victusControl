@@ -1,0 +1,2 @@
+C:\Users\lavig\Desktop\pc_control\publish\setup\VictusControl.Core.pdb
+C:\Users\lavig\Desktop\pc_control\publish\setup\VictusControl.Setup.exe

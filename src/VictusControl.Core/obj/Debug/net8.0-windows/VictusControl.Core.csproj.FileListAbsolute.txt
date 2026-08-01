@@ -10,3 +10,4 @@ C:\Users\lavig\Desktop\pc_control\src\VictusControl.Core\obj\Debug\net8.0-window
 C:\Users\lavig\Desktop\pc_control\src\VictusControl.Core\obj\Debug\net8.0-windows\refint\VictusControl.Core.dll
 C:\Users\lavig\Desktop\pc_control\src\VictusControl.Core\obj\Debug\net8.0-windows\VictusControl.Core.pdb
 C:\Users\lavig\Desktop\pc_control\src\VictusControl.Core\obj\Debug\net8.0-windows\ref\VictusControl.Core.dll
+c:\Users\lavig\Desktop\pc_control\src\VictusControl.Core\obj\Debug\net8.0-windows\VictusControl.Core.sourcelink.json
