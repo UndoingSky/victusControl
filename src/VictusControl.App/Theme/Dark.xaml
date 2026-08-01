@@ -1,0 +1,115 @@
+<!--
+  Dark: the one-bit world inverted - white ink on a black ground.
+
+  Two colours only. Every layout role resolves onto Ink or Paper, so the
+  dark/light flip inverts the whole interface. Keys are declared explicitly
+  rather than aliased: a <StaticResource> entry in a dictionary stores the
+  markup extension, not the resolved brush, and never resolves at lookup.
+-->
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:po="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
+                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                    mc:Ignorable="po">
+
+    <Color x:Key="InkColor">#FFFFFF</Color>
+    <Color x:Key="PaperColor">#000000</Color>
+
+    <SolidColorBrush x:Key="Ink" Color="{StaticResource InkColor}" po:Freeze="True"/>
+    <SolidColorBrush x:Key="Paper" Color="{StaticResource PaperColor}" po:Freeze="True"/>
+
+    <!-- Dither ladder: the only shading a two-colour interface has -->
+    <DrawingBrush x:Key="Dither1" TileMode="Tile" po:Freeze="True" Viewport="0,0,3,3"
+                  ViewportUnits="Absolute" Stretch="None" RenderOptions.EdgeMode="Aliased">
+        <DrawingBrush.Drawing>
+            <GeometryDrawing Brush="{StaticResource Ink}">
+                <GeometryDrawing.Geometry><RectangleGeometry Rect="0,0,1,1"/></GeometryDrawing.Geometry>
+            </GeometryDrawing>
+        </DrawingBrush.Drawing>
+    </DrawingBrush>
+
+    <DrawingBrush x:Key="Dither2" TileMode="Tile" po:Freeze="True" Viewport="0,0,2,2"
+                  ViewportUnits="Absolute" Stretch="None" RenderOptions.EdgeMode="Aliased">
+        <DrawingBrush.Drawing>
+            <GeometryDrawing Brush="{StaticResource Ink}">
+                <GeometryDrawing.Geometry>
+                    <GeometryGroup>
+                        <RectangleGeometry Rect="0,0,1,1"/>
+                        <RectangleGeometry Rect="1,1,1,1"/>
+                    </GeometryGroup>
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+        </DrawingBrush.Drawing>
+    </DrawingBrush>
+
+    <DrawingBrush x:Key="Dither3" TileMode="Tile" po:Freeze="True" Viewport="0,0,2,2"
+                  ViewportUnits="Absolute" Stretch="None" RenderOptions.EdgeMode="Aliased">
+        <DrawingBrush.Drawing>
+            <GeometryDrawing Brush="{StaticResource Ink}">
+                <GeometryDrawing.Geometry>
+                    <GeometryGroup>
+                        <RectangleGeometry Rect="0,0,1,1"/>
+                        <RectangleGeometry Rect="1,1,1,1"/>
+                        <RectangleGeometry Rect="1,0,1,1"/>
+                    </GeometryGroup>
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+        </DrawingBrush.Drawing>
+    </DrawingBrush>
+
+    <DrawingBrush x:Key="Dither4" TileMode="Tile" po:Freeze="True" Viewport="0,0,4,4"
+                  ViewportUnits="Absolute" Stretch="None" RenderOptions.EdgeMode="Aliased">
+        <DrawingBrush.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Ink}">
+                    <GeometryDrawing.Geometry><RectangleGeometry Rect="0,0,4,4"/></GeometryDrawing.Geometry>
+                </GeometryDrawing>
+                <GeometryDrawing Brush="{StaticResource Paper}">
+                    <GeometryDrawing.Geometry><RectangleGeometry Rect="0,0,1,1"/></GeometryDrawing.Geometry>
+                </GeometryDrawing>
+            </DrawingGroup>
+        </DrawingBrush.Drawing>
+    </DrawingBrush>
+
+    <DrawingBrush x:Key="CardHover" TileMode="Tile" po:Freeze="True" Viewport="0,0,3,3"
+                  ViewportUnits="Absolute" Stretch="None" RenderOptions.EdgeMode="Aliased">
+        <DrawingBrush.Drawing>
+            <GeometryDrawing Brush="{StaticResource Ink}">
+                <GeometryDrawing.Geometry><RectangleGeometry Rect="0,0,1,1"/></GeometryDrawing.Geometry>
+            </GeometryDrawing>
+        </DrawingBrush.Drawing>
+    </DrawingBrush>
+
+    <DrawingBrush x:Key="Track" TileMode="Tile" po:Freeze="True" Viewport="0,0,2,2"
+                  ViewportUnits="Absolute" Stretch="None" RenderOptions.EdgeMode="Aliased">
+        <DrawingBrush.Drawing>
+            <GeometryDrawing Brush="{StaticResource Ink}">
+                <GeometryDrawing.Geometry>
+                    <GeometryGroup>
+                        <RectangleGeometry Rect="0,0,1,1"/>
+                        <RectangleGeometry Rect="1,1,1,1"/>
+                    </GeometryGroup>
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+        </DrawingBrush.Drawing>
+    </DrawingBrush>
+
+    <!-- Layout roles -->
+    <SolidColorBrush x:Key="WindowBg" Color="{StaticResource PaperColor}" po:Freeze="True"/>
+    <SolidColorBrush x:Key="SidebarBg" Color="{StaticResource PaperColor}" po:Freeze="True"/>
+    <SolidColorBrush x:Key="CardBg" Color="{StaticResource PaperColor}" po:Freeze="True"/>
+    <SolidColorBrush x:Key="Stroke" Color="{StaticResource InkColor}" po:Freeze="True"/>
+    <SolidColorBrush x:Key="TextPrimary" Color="{StaticResource InkColor}" po:Freeze="True"/>
+    <SolidColorBrush x:Key="TextSecondary" Color="{StaticResource InkColor}" po:Freeze="True"/>
+    <SolidColorBrush x:Key="TextMuted" Color="{StaticResource InkColor}" po:Freeze="True"/>
+
+    <!-- No colour exists here, so "accent" is simply solid ink; emphasis comes
+         from inversion, and severity from the dither ladder. -->
+    <SolidColorBrush x:Key="AccentA" Color="{StaticResource InkColor}" po:Freeze="True"/>
+    <SolidColorBrush x:Key="AccentB" Color="{StaticResource InkColor}" po:Freeze="True"/>
+    <SolidColorBrush x:Key="AccentRamp" Color="{StaticResource InkColor}" po:Freeze="True"/>
+    <SolidColorBrush x:Key="Good" Color="{StaticResource InkColor}" po:Freeze="True"/>
+    <SolidColorBrush x:Key="Warn" Color="{StaticResource InkColor}" po:Freeze="True"/>
+    <SolidColorBrush x:Key="Danger" Color="{StaticResource InkColor}" po:Freeze="True"/>
+
+</ResourceDictionary>

@@ -1,0 +1,36 @@
+=== VictusControl BIOS diagnostic ===
+Time: 8/1/2026 8:54:58 PM
+Elevated: True
+
+BIOS WMI interface: initialized OK
+
+--- Raw BIOS reads (cmd/type -> returnCode : bytes) ---
+  Fan count          0x10 -> rc=0   : 02 00 00 00
+  Fan type           0x2C -> rc=0   : 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... (128 bytes)
+  Fan level          0x2D -> rc=0   : 22 1D 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... (128 bytes)
+  Fan table          0x2F -> rc=0   : 01 0C 18 00 00 00 00 00 00 00 00 00 00 00 00 00 ... (128 bytes)
+  Max fan state      0x26 -> rc=0   : 00 00 00 00
+  Temperature 0x23   0x23 -> rc=0   : 00 00 00 00
+  Temperature alt0   0x23 -> rc=0   : 00 00 00 00
+  System data        0x28 -> rc=0   : 78 00 00 00 00 D2 00 02 00 00 00 01 00 00 00 00 ... (128 bytes)
+  Throttling         0x35 -> rc=0   : 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... (128 bytes)
+  GPU mode           0x52 -> rc=4   : 00 00 00 00
+  GPU power          0x21 -> rc=0   : 00 01 01 00
+
+--- Fan mode WRITE test (0x1A) ---
+  SetFanMode Default(0x30)      -> returnCode 0
+     fan level after: rc=0 cpu=33 gpu=29
+  SetFanMode Performance(0x31)  -> returnCode 0
+     fan level after: rc=0 cpu=33 gpu=29
+  SetFanMode Cool(0x50)         -> returnCode 0
+     fan level after: rc=0 cpu=35 gpu=30
+
+--- WMI MSAcpi_ThermalZoneTemperature ---
+  zone[0] ACPI\ThermalZone\TZ01_0: 66.0 C
+
+--- CPU usage: PerformanceCounter vs GetSystemTimes ---
+  PerformanceCounter : 12.7%
+  GetSystemTimes     : 13.1%
+
+--- nvidia-smi ---
+  stdout: NVIDIA GeForce RTX 4050 Laptop GPU, 5, 54, 257, 6141, 7.49

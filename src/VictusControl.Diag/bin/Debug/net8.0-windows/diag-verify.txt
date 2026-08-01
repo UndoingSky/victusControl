@@ -1,0 +1,30 @@
+=== VictusControl BIOS diagnostic ===
+Time: 8/1/2026 9:25:25 PM
+Elevated: True
+
+BIOS WMI interface: initialized OK
+
+--- CORE FEATURE VERIFICATION ---
+  [PASS] fan telemetry              cpu 4600 rpm, gpu 4500 rpm
+  [PASS] cpu temperature            66 C (ACPI zone)
+  [PASS] cpu usage counter          32.3%
+  [PASS] gpu telemetry              11, 52, 7.45
+  [PASS] fan mode: default          rc=0
+  [PASS] fan mode: performance      rc=0
+  [PASS] fan mode: cool             rc=0
+  [PASS] fan mode: quiet            rc=0
+  [PASS] manual fan level           rc=0
+  [PASS] max fan engage             rc=0
+  [PASS] max fan reads back         reported ON
+  [PASS] max fan release            rc=0
+  [PASS] gpu power: minimum         rc=0
+  [PASS] gpu power: medium          rc=0
+  [PASS] gpu power: maximum         rc=0
+  [PASS] throttle state             not throttling
+
+  [INFO] gpu mode switch     unsupported on this machine (BIOS error 4) - expected
+
+--- RESTORING DEFAULTS ---
+  max fan: OFF   fan mode: Default   fans: cpu 4200 rpm, gpu 4000 rpm
+
+RESULT: 16 passed, 0 failed

@@ -1,0 +1,16 @@
+=== VictusControl BIOS diagnostic ===
+Time: 8/1/2026 8:56:00 PM
+Elevated: True
+
+BIOS WMI interface: initialized OK
+
+--- Max fan level probe ---
+  t+1s  cpu=35 (3500 rpm)  gpu=30 (3000 rpm)
+  t+2s  cpu=39 (3900 rpm)  gpu=34 (3400 rpm)
+  t+3s  cpu=42 (4200 rpm)  gpu=38 (3800 rpm)
+  t+4s  cpu=46 (4600 rpm)  gpu=42 (4200 rpm)
+  t+5s  cpu=50 (5000 rpm)  gpu=46 (4600 rpm)
+  t+6s  cpu=53 (5300 rpm)  gpu=49 (4900 rpm)
+  t+7s  cpu=54 (5400 rpm)  gpu=52 (5200 rpm)
+  t+8s  cpu=54 (5400 rpm)  gpu=52 (5200 rpm)
+  max fan disabled again

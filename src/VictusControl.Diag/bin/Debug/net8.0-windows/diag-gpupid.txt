@@ -1,0 +1,24 @@
+=== VictusControl BIOS diagnostic ===
+Time: 8/1/2026 11:13:39 PM
+Elevated: True
+
+BIOS WMI interface: initialized OK
+
+--- PER-PROCESS 3D GPU USAGE ---
+  processes reporting 3D engine activity: 28
+
+    pid 1956    dwm                              23.7 %
+    pid 20384   brave                             9.8 %
+    pid 1368    csrss                             1.6 %
+    pid 25200   VictusControl.App                 0.6 %
+    pid 11848   claude                            0.5 %
+    pid 10424   explorer                          0.0 %
+    pid 4       System                            0.0 %
+    pid 3664    NVIDIA Overlay                    0.0 %
+    pid 13168   msedgewebview2                    0.0 %
+    pid 9184    Discord                           0.0 %
+    pid 19412   msedgewebview2                    0.0 %
+    pid 12620   NVIDIA Overlay                    0.0 %
+    pid 16748   Discord                           0.0 %
+    pid 17384   msedgewebview2                    0.0 %
+    pid 16032   vgtray                            0.0 %

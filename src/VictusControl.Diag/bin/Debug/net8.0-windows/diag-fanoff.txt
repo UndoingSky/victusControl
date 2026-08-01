@@ -1,0 +1,9 @@
+=== VictusControl BIOS diagnostic ===
+Time: 8/1/2026 11:33:43 PM
+Elevated: True
+
+BIOS WMI interface: initialized OK
+
+Max fan release -> rc=0
+Max fan state now: OFF (byte 0)
+Fan level: cpu=54 (5400 rpm)  gpu=52 (5200 rpm)

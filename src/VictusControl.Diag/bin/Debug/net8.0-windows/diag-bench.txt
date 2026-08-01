@@ -1,0 +1,17 @@
+=== VictusControl BIOS diagnostic ===
+Time: 8/1/2026 9:49:05 PM
+Elevated: True
+
+BIOS WMI interface: initialized OK
+
+--- COST OF ONE REFRESH (ms, median of 5) ---
+  bios: fan level           364.6
+  bios: throttle state       23.2
+  bios: max fan state        15.3
+  wmi:  thermal zone          7.8
+  perf: cpu utility           0.1
+  proc: nvidia-smi           92.5
+                        --------
+  TOTAL PER REFRESH         503.6 ms
+
+  All of this currently runs on the UI thread every 1.5 s.

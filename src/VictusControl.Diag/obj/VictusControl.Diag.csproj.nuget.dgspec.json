@@ -1,0 +1,148 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\lavig\\Desktop\\pc_control\\src\\VictusControl.Diag\\VictusControl.Diag.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\lavig\\Desktop\\pc_control\\src\\VictusControl.Core\\VictusControl.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lavig\\Desktop\\pc_control\\src\\VictusControl.Core\\VictusControl.Core.csproj",
+        "projectName": "VictusControl.Core",
+        "projectPath": "C:\\Users\\lavig\\Desktop\\pc_control\\src\\VictusControl.Core\\VictusControl.Core.csproj",
+        "packagesPath": "C:\\Users\\lavig\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lavig\\Desktop\\pc_control\\src\\VictusControl.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lavig\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Microsoft.Management.Infrastructure": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "System.Diagnostics.PerformanceCounter": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.Management": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.423/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\lavig\\Desktop\\pc_control\\src\\VictusControl.Diag\\VictusControl.Diag.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lavig\\Desktop\\pc_control\\src\\VictusControl.Diag\\VictusControl.Diag.csproj",
+        "projectName": "VictusControl.Diag",
+        "projectPath": "C:\\Users\\lavig\\Desktop\\pc_control\\src\\VictusControl.Diag\\VictusControl.Diag.csproj",
+        "packagesPath": "C:\\Users\\lavig\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lavig\\Desktop\\pc_control\\src\\VictusControl.Diag\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lavig\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "C:\\Users\\lavig\\Desktop\\pc_control\\src\\VictusControl.Core\\VictusControl.Core.csproj": {
+                "projectPath": "C:\\Users\\lavig\\Desktop\\pc_control\\src\\VictusControl.Core\\VictusControl.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "System.Management": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.423/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
