@@ -1,0 +1,13 @@
+C:\Users\lavig\Desktop\pc_control\src\VictusControl.Core\bin\Release\net8.0-windows\VictusControl.Core.deps.json
+C:\Users\lavig\Desktop\pc_control\src\VictusControl.Core\bin\Release\net8.0-windows\VictusControl.Core.dll
+C:\Users\lavig\Desktop\pc_control\src\VictusControl.Core\bin\Release\net8.0-windows\VictusControl.Core.pdb
+C:\Users\lavig\Desktop\pc_control\src\VictusControl.Core\obj\Release\net8.0-windows\VictusControl.Core.csproj.AssemblyReference.cache
+C:\Users\lavig\Desktop\pc_control\src\VictusControl.Core\obj\Release\net8.0-windows\VictusControl.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lavig\Desktop\pc_control\src\VictusControl.Core\obj\Release\net8.0-windows\VictusControl.Core.AssemblyInfoInputs.cache
+C:\Users\lavig\Desktop\pc_control\src\VictusControl.Core\obj\Release\net8.0-windows\VictusControl.Core.AssemblyInfo.cs
+C:\Users\lavig\Desktop\pc_control\src\VictusControl.Core\obj\Release\net8.0-windows\VictusControl.Core.csproj.CoreCompileInputs.cache
+C:\Users\lavig\Desktop\pc_control\src\VictusControl.Core\obj\Release\net8.0-windows\VictusControl.Core.sourcelink.json
+C:\Users\lavig\Desktop\pc_control\src\VictusControl.Core\obj\Release\net8.0-windows\VictusControl.Core.dll
+C:\Users\lavig\Desktop\pc_control\src\VictusControl.Core\obj\Release\net8.0-windows\refint\VictusControl.Core.dll
+C:\Users\lavig\Desktop\pc_control\src\VictusControl.Core\obj\Release\net8.0-windows\VictusControl.Core.pdb
+C:\Users\lavig\Desktop\pc_control\src\VictusControl.Core\obj\Release\net8.0-windows\ref\VictusControl.Core.dll
